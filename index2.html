@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Géneros Musicales</title>
+	<style>
+		/* Estilos para la galería de imágenes */
+		.gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+		
+		.gallery img {
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			transition: transform 0.5s;
+		}
+		
+		.gallery img:hover {
+			transform: scale(1.1);
+			cursor: pointer;
+		}
+		
+		/* Estilos para la información de cada género */
+		.genre-info {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			color: #fff;
+			font-size: 18px;
+			font-weight: bold;
+			text-align: center;
+		}
+		
+		/* Estilos para cada género */
+		.trap-latino {
+			background-image: url('trap-latino.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		
+		.corridos-tumbados {
+			background-image: url('corridos-tumbados.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		
+		.electronica {
+			background-image: url('electronica.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+		
+		.reggaeton {
+			background-image: url('reggaeton.jpg');
+			background-size: cover;
+			background-position: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Géneros Musicales</h1>
+	<div class="gallery">
+		<div class="trap-latino" style="position: relative;">
+			<img src="trap latino.jpeg" alt="Trap Latino">
+			<div class="genre-info">Trap Latino</div>
+		</div>
+		<div class="corridos-tumbados" style="position: relative;">
+			<img src="corridos tumbados.WEBP" alt="Corridos Tumbados">
+			<div class="genre-info">Corridos Tumbados</div>
+		</div>
+		<div class="electronica" style="position: relative;">
+			<img src="electronica.png" alt="Electrónica">
+			<div class="genre-info">Electrónica</div>
+		</div>
+		<div class="reggaeton" style="position: relative;">
+			<img src="reggueton.jpeg" alt="Reggaetón">
+			<div class="genre-info">Reggaetón</div>
+		</div>
+	</div>
+    <!-- Agregamos el botón que lleva a index2.html -->
+	<a href="index1.html">
+		<button class="button">Ir a index1.html</button>
+	</a>
+</body>
+</html>
